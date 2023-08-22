@@ -1,0 +1,13 @@
+["setup.cfg".flake8]
+ignore = "D107,D202,D203,D401"
+max-line-length = 120
+inline-quotes = "double"
+
+["pyproject.toml".tool.ruff]
+select = ["E", "F"]
+
+[tool.ruff]
+# Enable the pycodestyle (`E`) and Pyflakes (`F`) rules by default.
+# Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
+# McCabe complexity (`C901`) by default.
+select = ["E", "F"]
